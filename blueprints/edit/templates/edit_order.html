@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}Запись{% endblock %}
+
+{% block body %}
+<div align="center">
+        <table border="0" width="25%" >
+            <form action="" method="post">
+                <input type="text" name="jalobi" placeholder="Жалобы" value="{{ item['jalobi'] }}">
+                <input type="text" name="diagnoz" placeholder="Диагноз" value="{{ item['diagnoz'] }}">
+                <input type="text" name="naznach" placeholder="Назначение" value="{{ item['naznach'] }}"><br><br>
+                <a>Присутствие</a>
+                <input type="checkbox" name="inv" value="1"><br><br>
+                <input type="submit" name="action" value="Сохранить"><br><br><br>
+            </form>
+        </table>
+    </div>
+{% endblock %}
+
+

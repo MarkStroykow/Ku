@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}Запись{% endblock %}
+
+{% block body %}
+<div align="center">
+        <table border="0" width="25%" >
+            <form action="" method="post">
+                <input type="submit" name="action" value="Понедельник"><br><br>
+                <input type="submit" name="action" value="Вторник"><br><br>
+                <input type="submit" name="action" value="Среда"><br><br>
+                <input type="submit" name="action" value="Четверг"><br><br>
+                <input type="submit" name="action" value="Пятница"><br><br>
+                <input type="submit" name="action" value="Суббота"><br><br>
+                <input type="submit" name="action" value="Воскресенье"><br><br><br><br><br><br>
+
+            </form>
+        </table>
+    <form action="" method="post">
+        <input type="submit" name="delete" value="Удалить">
+    </form>
+    </div>
+{% endblock %}

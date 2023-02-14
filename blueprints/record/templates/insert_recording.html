@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}Авторизация{% endblock %}
+
+{% block body %}
+<div align="center">
+
+        <h2>Запись на прием</h2>
+        <form   action="" method='POST' align="center" style="margin-top: 260px">
+                    <input type="date" name="invdate" placeholder="Дата приема">
+                    <select name="name_patient">
+                        {% for item in items %}
+                            <option value="{{ item['name_patient'] }}">{{ item['name_patient'] }}</option>
+                        {% endfor %}
+                    </select>
+                    <input type="submit" name="action" value="Добавить">
+
+                </form>
+
+    </div>
+{% endblock %}

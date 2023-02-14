@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Результат поиска</title>
+
+
+
+</head>
+<body>
+<h1 align="center"> Результат поисков:</h1>
+    <table border="5" align="center">
+         <tr>
+                <th>Дата приема</th>
+                <th>Жалобы</th>
+                <th>Диагноз</th>
+                <th>Назначение</th>
+         </tr>
+        {% for item in str %}
+        <tr>
+                <td style="text-align: center">{{item.invdate}}</td>
+                <td style="text-align: center">{{item.jalobi}}</td>
+                <td style="text-align: center">{{item.diagnoz}}</td>
+                <td style="text-align: center">{{item.naznach}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+<div align="center" style="margin-top: 150px"> <a href="/">Выход в главное меню</a> </div>
+</body>
+</html>
+
+

@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}Карта{% endblock %}
+
+{% block body %}
+    <div align="center">
+        <table border="0" width="25%" >
+            {% if items %}
+               <form   action="" method='POST' align="center" style="margin-top: 260px">
+
+                    <select name="name_doc">
+                        {% for item in items %}
+                            <option value="{{ item['name_doc'] }}">{{ item['name_doc'] }}</option>
+                        {% endfor %}
+                    </select>
+                    <input type="submit" name="action" value="Выбрать">
+
+                </form>
+            {% else %}
+               <div>
+                   Нет врачей на эту дату
+               </div>
+            {% endif %}
+        </table>
+        </div>
+{% endblock %}
+

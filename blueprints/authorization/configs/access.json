@@ -1,0 +1,31 @@
+{
+  "zavot": [
+    "",
+    "authorization.login_page",
+    "profile.index",
+    "record.record_index",
+    "profile.get_sql2",
+    "profile.get_sql3",
+    "edit.edit_index"
+  ],
+  "doctor": [
+    "",
+    "authorization.login_page",
+    "edit.edit_index",
+    "record.record_index"
+  ],
+  "admin": [
+    "",
+    "authorization.login_page",
+    "profile.index",
+    "profile.get_sql1",
+    "profile.get_sql2",
+    "profile.get_sql3",
+    "edit.edit_index",
+    "record.record_index"
+  ],
+  "unauthorized": [
+    "",
+    "authorization.login_page"
+  ]
+}
